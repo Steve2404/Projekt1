@@ -1,0 +1,63 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgba(231, 244, 248, 0.74);
+
+}
+
+
+p.vuDeFace{
+    width:100%;
+    height: 191px;
+    background-image: url(Img/image_exterieur.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+img.imgNotification{
+    width:75px; 
+    height:75px;
+    box-shadow: none;
+    
+}
+div.imageGlobale img{
+    width:200px; 
+    height:300px;
+    box-shadow: none;
+}
+img.notif{
+    animation: notification 3s ease 1s infinite normal forwards;
+}
+
+@keyframes notification {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
